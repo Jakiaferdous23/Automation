@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testing.org/testing-1.0.dtd">
+<suite name="Function" parallel="tests" thread-count="5">
+</listeners>
+<listeners class-name="run. ilisteners"></listeners>
+</listeners>
+<test name="Adhoc">
+<parameter name="browser"value="chrome"></parameter>
+<parameter name="URI" value"https://www.facebook.com"></parameter>
+<groups>
+<run>
+		<include name="smoke"></include>
+		<include name="Regression"></include>
+		<include name="Adhoc"></include>
+</run>
+</groups>
+</classes>
+<class name="run.Functions"></class>
+<class name="run.NewFunctionAccount"></class>
+</classes>
+</test>
+
+<test name="different">
+<parameter name="browser" value="firefox"></parameter>
+<parameter name="URI" value"https://www.facebook.com"></parameter>
+<classes>
+<class name="run.Functions"></class>
+<class name="run.NewFunctionAccount"></class>
+</classes>
+</test>
+</suite>
